@@ -7,16 +7,19 @@
 //
 
 import UIKit
-import AccountKit
 import SnapKit
 import Firebase
 import Alamofire
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let facebookButton = FBSDKLoginButton()
+        facebookButton.center = self.view.center
+        view.addSubview(facebookButton)
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,6 +9,6 @@ target 'Acheev' do
   pod 'Alamofire', '~> 4.7'
   pod 'SnapKit', '~> 4.0.0'
   pod 'Firebase/Core'
-  pod 'AccountKit'
+  pod 'FBSDKLoginKit'
 
 end

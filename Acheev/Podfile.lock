@@ -1,6 +1,15 @@
 PODS:
-  - AccountKit (4.35.0)
   - Alamofire (4.7.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.35.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.35.0):
+    - FBSDKCoreKit
   - Firebase/Core (5.5.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.1.0)
@@ -50,15 +59,17 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - AccountKit
   - Alamofire (~> 4.7)
+  - FBSDKLoginKit
   - Firebase/Core
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AccountKit
     - Alamofire
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -69,8 +80,10 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  AccountKit: 870ccaf5d33facda9408783e28fbe68c5211e069
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
+  FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
   Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
   FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
   FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
@@ -80,6 +93,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: d2842aba76a23fe0edb8e0fc96ef15032c3f3b84
+PODFILE CHECKSUM: 9d42a1f97d86c83bfeaffc4d5d4a55a64cf66931
 
 COCOAPODS: 1.5.3
