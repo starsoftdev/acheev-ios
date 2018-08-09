@@ -17,7 +17,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Facebook LogIn
         let facebookButton = FBSDKLoginButton()
+        facebookButton.readPermissions = ["public_profile", "email"]
         facebookButton.center = self.view.center
         view.addSubview(facebookButton)
     }
@@ -29,4 +31,3 @@ class ViewController: UIViewController {
 
 
 }
-
