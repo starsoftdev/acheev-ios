@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2BFFFB8174C6C36D232FE7DF /* Pods_Acheev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47C6F1FC3598878B3545CB3 /* Pods_Acheev.framework */; };
+		30111981212260440046BB03 /* ValidateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30111980212260440046BB03 /* ValidateEmail.swift */; };
+		30111983212261F10046BB03 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30111982212261F10046BB03 /* ValidationError.swift */; };
+		30111985212263B80046BB03 /* ValidatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30111984212263B80046BB03 /* ValidatePassword.swift */; };
 		3011F2FE211AADD00012AD29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F2FD211AADD00012AD29 /* AppDelegate.swift */; };
 		3011F300211AADD00012AD29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F2FF211AADD00012AD29 /* ViewController.swift */; };
 		3011F303211AADD00012AD29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011F301211AADD00012AD29 /* Main.storyboard */; };
@@ -15,10 +18,15 @@
 		3011F308211AADD10012AD29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011F306211AADD10012AD29 /* LaunchScreen.storyboard */; };
 		3011F310211BD66E0012AD29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3011F30F211BD66D0012AD29 /* GoogleService-Info.plist */; };
 		3011F318211BF15B0012AD29 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F317211BF15B0012AD29 /* APIService.swift */; };
+		3011F341211C777A0012AD29 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F340211C777A0012AD29 /* Setup.swift */; };
+		3011F343211C785D0012AD29 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F342211C785D0012AD29 /* Identity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21721475893AFE6CBB505766 /* Pods-Acheev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acheev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acheev/Pods-Acheev.release.xcconfig"; sourceTree = "<group>"; };
+		30111980212260440046BB03 /* ValidateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmail.swift; sourceTree = "<group>"; };
+		30111982212261F10046BB03 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		30111984212263B80046BB03 /* ValidatePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePassword.swift; sourceTree = "<group>"; };
 		3011F2FA211AADD00012AD29 /* Acheev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acheev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3011F2FD211AADD00012AD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3011F2FF211AADD00012AD29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		3011F309211AADD20012AD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3011F30F211BD66D0012AD29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3011F317211BF15B0012AD29 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3011F340211C777A0012AD29 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		3011F342211C785D0012AD29 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		8A72271E626BC44C31E3D62A /* Pods-Acheev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acheev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acheev/Pods-Acheev.debug.xcconfig"; sourceTree = "<group>"; };
 		C47C6F1FC3598878B3545CB3 /* Pods_Acheev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acheev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,14 +84,18 @@
 		3011F2FC211AADD00012AD29 /* Acheev */ = {
 			isa = PBXGroup;
 			children = (
-				3011F312211BEF820012AD29 /* API */,
+				3011F33E211C773C0012AD29 /* Common */,
 				3011F316211BF1220012AD29 /* App */,
 				3011F314211BEFA40012AD29 /* Controller */,
 				3011F311211BEF5C0012AD29 /* Extensions */,
 				3011F30F211BD66D0012AD29 /* GoogleService-Info.plist */,
 				3011F309211AADD20012AD29 /* Info.plist */,
 				3011F315211BEFAA0012AD29 /* Model */,
+				3011F31B211BF4370012AD29 /* Networking */,
 				3011F313211BEF9F0012AD29 /* View */,
+				30111980212260440046BB03 /* ValidateEmail.swift */,
+				30111982212261F10046BB03 /* ValidationError.swift */,
+				30111984212263B80046BB03 /* ValidatePassword.swift */,
 			);
 			path = Acheev;
 			sourceTree = "<group>";
@@ -148,6 +162,31 @@
 				3011F304211AADD10012AD29 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		3011F31B211BF4370012AD29 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3011F312211BEF820012AD29 /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3011F33E211C773C0012AD29 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3011F33F211C77430012AD29 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3011F33F211C77430012AD29 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3011F340211C777A0012AD29 /* Setup.swift */,
+				3011F342211C785D0012AD29 /* Identity.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F181FC5EF0016C2E8E6AD0A7 /* Frameworks */ = {
@@ -236,6 +275,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Acheev/Pods-Acheev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -246,6 +286,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -283,9 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30111985212263B80046BB03 /* ValidatePassword.swift in Sources */,
+				30111981212260440046BB03 /* ValidateEmail.swift in Sources */,
 				3011F300211AADD00012AD29 /* ViewController.swift in Sources */,
+				30111983212261F10046BB03 /* ValidationError.swift in Sources */,
 				3011F318211BF15B0012AD29 /* APIService.swift in Sources */,
+				3011F343211C785D0012AD29 /* Identity.swift in Sources */,
 				3011F2FE211AADD00012AD29 /* AppDelegate.swift in Sources */,
+				3011F341211C777A0012AD29 /* Setup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
