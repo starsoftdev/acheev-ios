@@ -12,6 +12,7 @@
 		30111983212261F10046BB03 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30111982212261F10046BB03 /* ValidationError.swift */; };
 		30111985212263B80046BB03 /* ValidatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30111984212263B80046BB03 /* ValidatePassword.swift */; };
 		301119872123B5BF0046BB03 /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301119862123B5BF0046BB03 /* LoginValidator.swift */; };
+		301119892123B7A30046BB03 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301119882123B7A30046BB03 /* LoginController.swift */; };
 		3011F2FE211AADD00012AD29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F2FD211AADD00012AD29 /* AppDelegate.swift */; };
 		3011F300211AADD00012AD29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011F2FF211AADD00012AD29 /* ViewController.swift */; };
 		3011F303211AADD00012AD29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011F301211AADD00012AD29 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		30111982212261F10046BB03 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		30111984212263B80046BB03 /* ValidatePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePassword.swift; sourceTree = "<group>"; };
 		301119862123B5BF0046BB03 /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
+		301119882123B7A30046BB03 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		3011F2FA211AADD00012AD29 /* Acheev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acheev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3011F2FD211AADD00012AD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3011F2FF211AADD00012AD29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3011F2FF211AADD00012AD29 /* ViewController.swift */,
+				301119882123B7A30046BB03 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				301119872123B5BF0046BB03 /* LoginValidator.swift in Sources */,
 				3011F2FE211AADD00012AD29 /* AppDelegate.swift in Sources */,
 				3011F341211C777A0012AD29 /* Setup.swift in Sources */,
+				301119892123B7A30046BB03 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
