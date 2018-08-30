@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Facebook LogIn
         let facebookButton = FBSDKLoginButton()
+        facebookButton.tintColor = .yellow
         facebookButton.readPermissions = ["public_profile", "email"]
         facebookButton.center = self.view.center
         view.addSubview(facebookButton)
