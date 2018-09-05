@@ -9,27 +9,34 @@
 import UIKit
 
 class SignUpController: UIViewController {
-
+    
+    
+    @IBOutlet weak var alreadyAMemberButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupSubviews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupSubviews() {
+        alreadyAMemberButton.setTitleColor(.black, for: .normal)
+        alreadyAMemberButton.setTitle("Already a member? \nSign In!", for: .normal)
+        alreadyAMemberButton.titleLabel?.numberOfLines = 2
+        alreadyAMemberButton.titleLabel?.textAlignment = .center
+        alreadyAMemberButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
     }
-    */
+    
+    @IBAction func onSignupButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let tabBarController = storyboard.instantiateViewController(withIdentifier:
+            "TabBarController")
+        self.navigationController?.present(tabBarController, animated: true, completion: nil)
+        
+        print("On sign up button")
+    }
+    
+}
 
+extension SignUpController {
+    
 }

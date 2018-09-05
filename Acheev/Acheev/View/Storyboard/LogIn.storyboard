@@ -183,6 +183,9 @@
                                 <state key="normal" title="Log In" backgroundImage="logIn-button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogInButton:" destination="mlb-xF-1a4" eventType="touchUpInside" id="kyH-tH-OSn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak9-HF-IgT">
                                 <rect key="frame" x="276" y="459" width="81" height="12"/>
@@ -239,6 +242,9 @@
                         <viewLayoutGuide key="safeArea" id="Bgb-UB-10R"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="0ZW-21-aw4"/>
+                    <connections>
+                        <outlet property="notAMemberButton" destination="Wpr-Ih-gZB" id="4e2-O4-dYh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDS-PR-tUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,6 +393,9 @@
                                         <state key="normal" title="Sign Up" backgroundImage="logIn-button-background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onSignupButton:" destination="0Ub-Tf-wnX" eventType="touchUpInside" id="vwn-WO-gft"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By joining I agree to receive emails from Acheev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcL-dg-OWr">
                                         <rect key="frame" x="54.5" y="56" width="231" height="12"/>
@@ -444,6 +453,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BqG-Vl-cGm"/>
                     </view>
+                    <connections>
+                        <outlet property="alreadyAMemberButton" destination="vpZ-SO-Jhp" id="Vss-nF-ARs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIS-QO-ca3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
